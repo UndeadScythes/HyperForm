@@ -1,7 +1,6 @@
 package com.undeadscythes.hyperform;
 
 import java.util.logging.*;
-import static java.util.logging.Logger.*;
 
 /**
  * The {@link HyperOp} structure describes an action that must be taken when
@@ -10,7 +9,7 @@ import static java.util.logging.Logger.*;
  * @author UndeadScythes
  */
 public class HyperOp {
-    private static final Logger LOGGER = getLogger(HyperOp.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(HyperOp.class.getName());
 
     private final HyperType type;
     private final Object action;

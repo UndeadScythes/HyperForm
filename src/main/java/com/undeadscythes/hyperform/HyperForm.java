@@ -4,7 +4,6 @@ import com.undeadscythes.betterreader.*;
 import java.io.*;
 import java.util.*;
 import java.util.logging.*;
-import static java.util.logging.Logger.*;
 
 /**
  * {@link HyperForm} stores all the operations that should be executed during
@@ -13,7 +12,7 @@ import static java.util.logging.Logger.*;
  * @author UndeadScythes
  */
 public class HyperForm {
-    private static final Logger LOGGER = getLogger(HyperForm.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(HyperForm.class.getName());
     private static final String PREFIX = "<?ged ";
     private static final String PREFIX_REGEX = "<\\?ged ";
     private static final String SUFFIX = " ?>";
