@@ -1,4 +1,4 @@
-# HyperForm - 1.0.1-Alpha #
+# HyperForm - Alpha-1.1-SNAPSHOT #
 
 HyperForm is a very simple Hypertext formatter/pre-processor. Its
 syntax follows from PHP in a basic form.
