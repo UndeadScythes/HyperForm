@@ -15,8 +15,8 @@ public class HyperForm {
     private static final Logger LOGGER = Logger.getLogger(HyperForm.class.getName());
     private static final String PREFIX = "<?ged ";
     private static final String PREFIX_REGEX = "<\\?ged ";
-    private static final String SUFFIX = " ?>";
-    private static final String SUFFIX_REGEX = " \\?>";
+    private static final String SUFFIX = "?>";
+    private static final String SUFFIX_REGEX = "\\?>";
 
     private final Map<String, HyperOp> map = new HashMap<String, HyperOp>(0);
 
@@ -75,7 +75,7 @@ public class HyperForm {
         while (line.contains(PREFIX) && line.contains(SUFFIX)) {
             final String var = line.split(PREFIX_REGEX)[1].split(SUFFIX_REGEX)[0];
             final String replace = PREFIX + var + SUFFIX;
-            final HyperOp operation = map.get(var);
+            final HyperOp operation = map.get(var.trim());
             if (operation == null) {
                 LOGGER.warning("Unrecognized variable '" + var + "' on line " + lineNo + ".");
                 line = line.replace(replace, "");
