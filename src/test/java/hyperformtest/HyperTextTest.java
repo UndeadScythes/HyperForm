@@ -10,6 +10,6 @@ import org.junit.*;
 public class HyperTextTest {
     @Test
     public void testConcat() {
-        assertEquals("concat()", "test-test", new HyperText(new HyperText("test-"), new HyperText("test")).getMarkup());
+        assertEquals("test-test", new HyperText(new HyperText("test-"), new HyperText("test")).getMarkup());
     }
 }
